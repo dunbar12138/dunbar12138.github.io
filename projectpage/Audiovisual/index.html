@@ -113,6 +113,26 @@
 		height: 1px;
 		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 	}
+/* 
+	table {	
+		border-collapse: collapse;
+		font-family: Futura, Arial, sans-serif;
+	}
+
+	caption {
+		font-size: larger;
+		margin: 1em auto;
+	}
+
+	th,td {
+		padding: .65em;
+	}
+
+	th,td {
+		border-bottom: 1px solid #ddd;
+		border-top: 1px solid #ddd;
+		text-align: center;
+	} */
 </style>
 
 <html>
@@ -131,15 +151,15 @@
 	  					<center>
 							<span style="font-size:20px"><a href="https://dunbar12138.github.io/">Kangle Deng</a></span>
 		  		  		</center>
-		  		  	  </td>
+						  </td>
+						<td align=center width=100px>
+							<center>
+								<span style="font-size:20px"><a href="http://www.cs.cmu.edu/~deva/">Deva Ramanan</a></span>
+								</center>
+						</td>
 	  	              <td align=center width=100px>
 	  					<center>
 							<span style="font-size:20px"><a href="http://www.cs.cmu.edu/~aayushb/">Aayush Bansal</a></span>
-		  		  		</center>
-		  		  	  </td>
-	  	              <td align=center width=100px>
-	  					<center>
-							<span style="font-size:20px"><a href="http://www.cs.cmu.edu/~deva/">Deva Ramanan</a></span>
 		  		  		</center>
 		  		  	  </td>
 			  </table>
@@ -272,7 +292,7 @@
 
 		  <center><h1>Voice Conversion</h1></center> <br>
 
-		  <table align=center>
+		  <table align=center style="margin:0 0 0 -10%">
 			<!-- <thead>
 			  <tr>
 				<th>Input</th>
@@ -300,13 +320,29 @@
 			</thead> -->
 			<tbody>
 			  <thead>
-				<th>Input </th>	
+				  <th colspan="2"></th>
+				  <th colspan="3">Input</th>
+			  </thead>
+			  <thead>
+				<th colspan="2"> </th>	
 				<td>
 				<audio controls="">
 				  <source src="./audios/trump01/input_trump.wav" type="audio/wav">
 				  Your browser does not support the audio element.
 					</audio>
-				  </td>
+				</td>
+				<td>
+					<audio controls="">
+					<source src="./audios/sample02/mysampleinput3.m4a" type="audio/wav">
+					Your browser does not support the audio element.
+				</audio>
+				</td>
+				<td>
+					<audio controls="">
+					<source src="./audios/MLK03/input_3_MartinLutherKing.wav" type="audio/wav">
+					Your browser does not support the audio element.
+				</audio>
+				</td>
 			  </thead>
 			  <tr></tr><tr></tr><tr></tr><tr></tr>
 			  <tr></tr><tr></tr><tr></tr><tr></tr>
@@ -326,9 +362,10 @@
 					</audio>
 					</td>
 				</tr>
-
-				<tr> -->
-				<th>Alexei Efros <br>
+				-->
+				<tr>
+				<th rowspan="16">Target Speaker <br> & <br> Reference</th>
+				<!-- <th>Alexei Efros <br>
 					<audio controls="">
 							<source src="./audios/reference/AlexeiEfros_0002.wav" type="audio/wav">
 							Your browser does not support the audio element.
@@ -340,7 +377,7 @@
 					Your browser does not support the audio element.
 					</audio>
 					</td>
-				</tr>
+				</tr> -->
 
 				<tr>
 				<th>Barack Obama <br>
@@ -355,6 +392,18 @@
 					Your browser does not support the audio element.
 					</audio>
 					</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/obama_old.wav" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="http://trinity.vision.cs.cmu.edu:12749/evaluation/user_study/ours/res/3_obama.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 
 				<tr>
@@ -370,6 +419,18 @@
 					Your browser does not support the audio element.
 					</audio>
 					</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/billclinton_old.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+						</td>
+				<td>
+					<audio controls="">
+						<source src="http://trinity.vision.cs.cmu.edu:12749/evaluation/user_study/ours/res/3_billclinton.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 
 				<tr>
@@ -384,7 +445,19 @@
 					<source src="./audios/trump01/carl.wav" type="audio/wav">
 					Your browser does not support the audio element.
 					</audio>
-					</td>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/carlsagan_98000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/MLK03/carlsagan_98000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+					</audio>
+				</td>
 				</tr>
 
 				<tr>
@@ -399,10 +472,22 @@
 					<source src="./audios/trump01/claude.wav" type="audio/wav">
 					Your browser does not support the audio element.
 					</audio>
-					</td>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/claudeshannon_74000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/MLK03/claudeshannon_104000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 
-				<tr>
+				<!-- <tr>
 				<th>David Attengorough <br>
 					<audio controls="">
 							<source src="./audios/reference/DavidAttenborough_0695.wav" type="audio/wav">
@@ -430,9 +515,9 @@
 					Your browser does not support the audio element.
 					</audio>
 					</td>
-				</tr>
+				</tr> -->
 
-				<tr>
+				<!-- <tr>
 				<th>Martin Luther King <br>
 					<audio controls="">
 							<source src="./audios/reference/MartinLutherKing_0094.wav" type="audio/wav">
@@ -445,7 +530,13 @@
 					Your browser does not support the audio element.
 					</audio>
 					</td>
-				</tr>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/MLK_80000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
+				</tr> -->
 
 				<tr>
 				<th>Michelle Obama <br>
@@ -459,10 +550,22 @@
 					<source src="./audios/trump01/michelle.wav" type="audio/wav">
 					Your browser does not support the audio element.
 					</audio>
-					</td>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/michelleobama_108000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/MLK03/michelleobama_108000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 
-				<tr>
+				<!-- <tr>
 				<th>Neil Degrasse <br>
 					<audio controls="">
 							<source src="./audios/reference/NeilDegrasseTyson_2073.wav" type="audio/wav">
@@ -475,7 +578,7 @@
 					Your browser does not support the audio element.
 					</audio>
 					</td>
-				</tr>
+				</tr> -->
 
 				<tr>
 				<th>Nelson Mandela <br>
@@ -489,7 +592,19 @@
 					<source src="./audios/trump01/nelson.wav" type="audio/wav">
 					Your browser does not support the audio element.
 					</audio>
-					</td>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/nelson_old.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="http://trinity.vision.cs.cmu.edu:12749/evaluation/user_study/ours/res/3_nelson.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 
 				<tr>
@@ -504,7 +619,19 @@
 					<source src="./audios/trump01/oprah.wav" type="audio/wav">
 					Your browser does not support the audio element.
 					</audio>
-					</td>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/oprah_98000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="http://trinity.vision.cs.cmu.edu:12749/evaluation/user_study/ours/res/3_oprah.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 
 				<tr>
@@ -520,6 +647,18 @@
 					Your browser does not support the audio element.
 					</audio>
 					</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/richardhamming_104000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="http://trinity.vision.cs.cmu.edu:12749/evaluation/user_study/ours/res/3_richardhamming.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 
 				<tr>
@@ -528,13 +667,25 @@
 							<source src="./audios/reference/StephenHawking_0270.wav" type="audio/wav">
 							Your browser does not support the audio element.
 					</audio>
-				</th>	
+				</th>
 				<td>
 				<audio controls="">
 					<source src="./audios/trump01/stephen.wav" type="audio/wav">
 					Your browser does not support the audio element.
 					</audio>
-					</td>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/stephenhawking.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="http://trinity.vision.cs.cmu.edu:12749/evaluation/user_study/ours/res/3_stephenhawking.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 
 				<tr>
@@ -550,6 +701,18 @@
 					Your browser does not support the audio element.
 					</audio>
 					</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/takeo_66000.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="http://trinity.vision.cs.cmu.edu:12749/evaluation/user_study/ours/res/3_takeokanade.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 
 				<tr>
@@ -565,6 +728,18 @@
 					Your browser does not support the audio element.
 					</audio>
 					</td>
+				<td>
+					<audio controls="">
+						<source src="./audios/sample02/theresamay.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
+				<td>
+					<audio controls="">
+						<source src="http://trinity.vision.cs.cmu.edu:12749/evaluation/user_study/ours/res/3_theresamay.wav" type="audio/wav">
+						Your browser does not support the audio element.
+						</audio>
+				</td>
 				</tr>
 			</tbody>
 			</table>
@@ -575,49 +750,188 @@
 
 		  We show audiovisual results based on audio input of random speakers. We use the publicly available videos of various public figures for the experiement, especially the <a href="http://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html">VoxCeleb2 dataset</a>. <br><br><br>
 
-		  <center>		  
-			Input <br>
-			<audio controls="">
-			  <source src="./audios/trump01/input_trump.wav" type="audio/wav">
-			  Your browser does not support the audio element.
-				</audio><br></center>
+			<!-- <table align=center>
+				<thead>
+					<tr>
+						<th>Input</th>
+						<th colspan="3">Output</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+						<audio controls="">
+							<source src="./audios/trump01/input_trump.wav" type="audio/wav">
+							Your browser does not support the audio element.
+								</audio>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/01_obama.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/01_churchill.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/01_vox1106.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+					</tr>
+					<tr>
+						<th>
+						<audio controls="">
+							<source src="videos/input/input_4_MartinLutherKing.wav" type="audio/wav">
+							Your browser does not support the audio element.
+								</audio>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/02_obama.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/02_churchill.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/02_vox1106.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+					</tr>
+					<tr>
+						<th>
+						<audio controls="">
+							<source src="videos/input/p364_001.wav" type="audio/wav">
+							Your browser does not support the audio element.
+								</audio>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/03_obama.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/03_churchill.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/03_vox1106.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+					</tr>
+				</tbody>
+			</table> -->
 
-			<br><br>
-			<center>
-			Output <br>
-			<video width="240" height="240" controls>
-					<source src="videos/01/trump2obama.mp4" type="video/mp4">
-					Your browser does not support the video element.
-			</video>
-			<video width="240" height="240" controls>
-					<source src="videos/01/churchill.mp4" type="video/mp4">
-					Your browser does not support the video element.
-			</video>
-			<video width="240" height="240" controls>
-					<source src="videos/01/vox1106_2.mp4" type="video/mp4">
-					Your browser does not support the video element.
-			</video>
+			<table align=center>
+				<thead>
+					<tr>
+						<th></th>
+						<th colspan="3">Input</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th></th>
+						<th>
+						<audio controls="">
+								<source src="./audios/trump01/input_trump.wav" type="audio/wav">
+								Your browser does not support the audio element.
+						</audio>
+						</th>
+						<th>
+						<audio controls="">
+							<source src="videos/input/input_4_MartinLutherKing.wav" type="audio/wav">
+							Your browser does not support the audio element.
+						</audio>
+						</th>
+						<th>
+						<audio controls="">
+							<source src="videos/input/p364_001.wav" type="audio/wav">
+							Your browser does not support the audio element.
+								</audio>
+						</th>
+					</tr>
+					<tr>
+						<th rowspan="3">Output</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/01_obama.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/02_obama.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/03_obama.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+					</tr>
+					<tr>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/01_churchill.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/02_churchill.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/03_churchill.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+					</tr>
+					<tr>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/01_vox1106.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/02_vox1106.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+						<th>
+						<video width="240" height="240" controls>
+							<source src="videos/samples/03_vox1106.mp4" type="video/mp4">
+								Your browser does not support the video element.
+						</video>
+						</th>
+					</tr>
+				</tbody>
+			</table>
 
-			<!-- <p><iframe width="560" height="315" src="https://www.youtube.com/embed/KcaToKI2eQA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
-			<p><iframe width="560" height="315" src="https://www.youtube.com/embed/35bYQ2GlAJI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p> -->
-			</center>
-			<br>
-
-			<center>		  
-			Input <br>
-			<audio controls="">
-				<source src="./audios/Obama.wav" type="audio/wav">
-				Your browser does not support the audio element.
-				</audio><br></center>
-
-			<br><br>
-			<center>
-			Output <br>
-			<video width="240" height="240" controls>
-					<source src="videos/02/vox_cut.mp4" type="video/mp4">
-					Your browser does not support the video element.
-			</video>
-			</center>
 			<br>
 
 
