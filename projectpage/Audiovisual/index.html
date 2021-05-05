@@ -113,26 +113,6 @@
 		height: 1px;
 		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 	}
-/* 
-	table {	
-		border-collapse: collapse;
-		font-family: Futura, Arial, sans-serif;
-	}
-
-	caption {
-		font-size: larger;
-		margin: 1em auto;
-	}
-
-	th,td {
-		padding: .65em;
-	}
-
-	th,td {
-		border-bottom: 1px solid #ddd;
-		border-top: 1px solid #ddd;
-		text-align: center;
-	} */
 </style>
 
 <html>
@@ -163,25 +143,14 @@
 								</center>
 						</td>
 			  </table>
-          		<!-- <span style="font-size:30px">ECCV 2016.</span> -->
 
 	  		  <table align=center width=400px>
 	  			  <tr>
-	  	              <!-- <td align=center width=150px>
-	  					<center>
-	  						<span style="font-size:24px"><a href='http://scs00197.sp.cs.cmu.edu/'> [Demo]</a>
-		  		  		</center>
-		  		  	  </td> -->
 	  	              <td align=center width=150px>
 	  					<center>
 	  						<span style="font-size:24px"><a href='https://github.com/dunbar12138/Audiovisual-Synthesis'> [GitHub]</a></span>
 		  		  		</center>
 		  		  	  </td>
-	  	              <!-- <td align=center width=150px>
-	  					<center>
-	  						<span style="font-size:24px"><a href='http://www.cs.cmu.edu/~aayushb/AudioCon/AudioCon.pdf'> [Paper]</a></span>
-		  		  		</center>
-						  </td> -->
 						<td align=center width=150px>
 						<center>
 							<span style="font-size:24px"><a href='http://trinity.vision.cs.cmu.edu:12749/DB_GoogleDrive/ExemplarAutoencoder_ICLR2021.pdf'> [Paper]</a></span>
@@ -191,18 +160,8 @@
 		  		  	 </tr>
 	  			  <tr>
 			  </table>
-	  		  <!-- <table align=center width=800px>
-	  	              <td align=center width=150px>
-	  					<center>
-	  						<span style="font-size:18px"><b>Also check out our new work on <a href='https://richzhang.github.io/ideepcolor'> Interactive Deep Colorization</a>!</b>
-		  		  		</center>
-		  		  	  </td>
-		  		  	 </tr>
-			  </table> -->
-          </center>
 
-<!--   		  <br><br>
-		  <hr> -->
+          </center>
 
   		  <br>
 
@@ -211,60 +170,27 @@
   					<center>
 						<img src = "./images/exemplar_autoencoder_1.jpg" height="90px"></img></href><br>
 
-  	                	<!-- <img src = "./images/Exempar_autoencoder.jpg" height="400px"></img></href><br> -->
 					</center>
 					<br>
-					<font color="darkred" size="5">Once trained, an <b>Exemplar Autoencoder</b> can be used for various applications such as:</font>
+					<span style="font-size:21px"><font color="darkred">Once trained, an <b>Exemplar Autoencoder</b> can be used for various applications such as:</font></span>
 
 					<center>
 						<img src = "./images/exemplar_autoencoder_2.jpg" height="190px"></img></href><br>
 					</center>
 
-  					<center>
-  	                	<!-- <span style="font-size:14px"><i>Our approach translates the input audio fromany speaker to that of a list of many known speakers. We show an example of audio translation in the top half. With little modification, our approach can also generate video alongside audio from an input audiosignal. The second half shows a variety of facial examples created using our method for audio-video generation.</i> -->
-						<!-- Our approach converts any unknown voice to an audiovisual stream of a specific speaker. A simple autoencoder trained on exemplar speech allows generalization to unknown voice. We show various applications with our framework.  -->
-						<!-- We train audiovisual exemplar autoencoders that capture personalized in-the-wild web speech as shown in the top-row. We then show three representative applications of Exemplar Autoencoders: (a) Our approach enables zero-shot natural voice synthesis from an Electrolarynx or a TTS used by a speech-impaired person; (b) Without any knowledge of Chinese and Hindi, our approach can generate Chinese and Hindi speech for John Oliver, an English-speaking late-night show host; and (c) We can generate audio-visual content for historical documents that could not be otherwise captured. -->
-					</center>
+
   	              </td>
 
   		  </table>
 
       	  <br>
 		  <hr>
-			<!-- <div class="disclaimerbox">
 
-	  		 <span style="color:#646464">
-	  		  	<center><span style="font-size:28px"><b>How to interpret the results</b></span></center>
-
-	  		  	<br>
-				
-				<i> Welcome! Computer vision algorithms often work well on some images, but fail on others. Ours is like this too. We believe our work is a significant step forward in solving the colorization problem. However, there are still many hard cases, and this is by no means a solved problem. Some failure cases can be seen <a href="#vgg_res">below</a> and the figure <a href="./resources/images/imnet_failures.jpg">here</a>.
-
-				</i>
-
-				<br><br>
-
-				<i>This is partly because our algorithm is trained on one million images from the Imagenet dataset, and will thus work well for these types of images, but not necessarily for others. We call this the <i>"dataset bias"</i> problem. We include <a href="#bw_legacy">colorizations of black and white photos of renowned photographers</a> as an interesting <i>"out-of-dataset"</i> experiment and make no claims as to artistic improvements, although we do enjoy many of the results!</i>
-
-				<br><br>
-
-				<i>There has been some concurrent work on this subject as well. Specifically, see Larsson et al. and Iizuka et al. <a href="#related_work">below</a>.</i>
-
-				<br><br>
-
-				<i>Please enjoy our results, and if you're so inclined, <a href="http://demos.algorithmia.com/colorize-photos/">try the model</a> yourself</i>!
-
-			</span>
-
-			</div>
-  		  <br><br>
-		  <hr> -->
 
 
   		  <table align=center width=850px>
 	  		  <center><h1>Abstract</h1></center>
 			</table>
-			<!-- We present an unsupervised approach that enables us to convert the speech input of any one individual to an output set of potentially-infinitely many speakers, i.e., one can stand in front of a mic and be able to make their favorite celebrity say the same words. Our approach builds on simple autoencoders that project out-of-sample data to the distribution of the training set (motivated by PCA/linear autoencoders). We use an exemplar autoencoder to learn the voice and specific style (emotions and ambiance) of a target speaker. In contrast to existing methods, the proposed approach can be easily extended to an arbitrarily large number of speakers in a very little time using only two-three minutes of audio data from a speaker. We also exhibit the usefulness of our approach for generating video from audio signals and vice-versa. -->
 			We present an unsupervised approach that converts the input speech of any individual into audiovisual streams of potentially-infinitely many output speakers. Our approach builds on simple autoencoders that project out-of-sample data onto the distribution of the training set. We use exemplar autoencoders to learn the voice, stylistic prosody, and visual appearance of a specific target exemplar speech. In contrast to existing methods, the proposed approach can be easily extended to an arbitrarily large number of speakers and styles using only 3 minutes of target audio-video data, without requiring  any training data for the input speaker.
 		
 			<br><br>
@@ -272,8 +198,6 @@
 			
 			<table align=center width=600px>
 				   <tr>
-					   <!--<td width=300px align=left>-->
-					   <!-- <a href="http://arxiv.org/pdf/1603.08511.pdf"> -->
 					 <td><a href="http://trinity.vision.cs.cmu.edu:12749/DB_GoogleDrive/ExemplarAutoencoder_ICLR2021.pdf"><img class="layered-paper-big" style="height:175px" src="./images/AudioRetargeting_firstpage.jpg"/></a></td>
 					 <td><span style="font-size:14pt">K. Deng, A. Bansal, D. Ramanan<br>
 					 Unsupervised Audiovisual Synthesis via Exemplar Autoencoders.<br>
@@ -314,8 +238,6 @@
 				  Your browser does not support the video element.
 		  </video></center>
 
-		<!-- <br>
-		  Here are more examples. -->
 
 
 		  <center><h2>Stylize Text-To-Speech (TTS) Output</h2></center>
@@ -402,7 +324,6 @@
 
 		  <br>
 		  <center>
-		  <!-- <p><iframe width="640" height="360" src="https://www.youtube.com/embed/t80R2zwXR00" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p> -->
 		  <video width="640" height="380" controls>
 			<source src="videos/demo/DemoVideo.mp4" type="video/mp4">
 				Your browser does not support the video element.
@@ -418,19 +339,13 @@
 			<tbody>
 			  <thead>
 				  <th colspan="1"></th>
-				  <!-- <th colspan="3"><span style="font-size:24px;">Input</span></th> -->
-				  <!-- <th>Input-1</th> -->
+
 				  <th>Input-1</th>
 				  <th>Input-2</th>
 			  </thead>
 			  <thead>
 				<th colspan="1"> </th>
-				<!-- <td>
-				<audio controls="">
-				  <source src="./audios/trump01/input_trump.wav" type="audio/wav">
-				  Your browser does not support the audio element.
-					</audio>
-				</td> -->
+
 				<td>
 					<audio controls="">
 					<source src="./audios/1-input.m4a" type="audio/wav">
@@ -583,145 +498,7 @@
 								<br>
 						</th>
 					</tr>
-				<!-- <tr>
-					<th>
-						<img class="rounded" src = "./images/celeb/takeo.png" height="80px"></img><br>
-						Takeo Kanade <br>
-						<audio controls="">
-							<source src="./audios/our_results/1-takeokanade.wav" type="audio/wav">
-							Your browser does not support the audio element.
-							</audio>
-							<br>
-							<audio controls="">
-								<source src="./audios/our_results/2-takeokanade.wav" type="audio/wav">
-								Your browser does not support the audio element.
-							</audio>
-							<br>
-					</th>
 
-					<th>
-						<img class="rounded" src = "./images/celeb/oprah.png" height="80px"></img><br>
-						Oprah Winfrey <br>
-						<audio controls="">
-							<source src="./audios/our_results/1-oprahwinfrey.wav" type="audio/wav">
-							Your browser does not support the audio element.
-							</audio>
-							<br>
-							<audio controls="">
-								<source src="./audios/our_results/2-oprah.wav" type="audio/wav">
-								Your browser does not support the audio element.
-							</audio>
-							<br>
-					</th>
-					<th>
-						<img class="rounded" src = "./images/celeb/carl.png" height="80px"></img><br>
-						Carl Sagan <br>
-						<audio controls="">
-							<source src="./audios/our_results/1-carlsagan.wav" type="audio/wav">
-							Your browser does not support the audio element.
-							</audio>
-							<br>
-							<audio controls="">
-								<source src="./audios/our_results/2-carlsagan.wav" type="audio/wav">
-								Your browser does not support the audio element.
-							</audio>
-							<br>
-					</th>
-				</tr>
-
-				<tr>
-					<th>
-						<br>
-						<img class="rounded" src = "./images/celeb/alan.png" height="80px"></img><br>
-						Alan Kay <br>
-						<audio controls="">
-							<source src="./audios/our_results/1-alankay.wav" type="audio/wav">
-							Your browser does not support the audio element.
-							</audio>
-							<br>
-							<audio controls="">
-								<source src="./audios/our_results/2-alankay.wav" type="audio/wav">
-								Your browser does not support the audio element.
-							</audio>
-							<br>
-					</th>
-
-					<th>
-						<img class="rounded" src = "./images/celeb/alexei.png" height="80px"></img><br>
-						Alexei Efros <br>
-						<audio controls="">
-							<source src="./audios/our_results/1-alexeiefros.wav" type="audio/wav">
-							Your browser does not support the audio element.
-							</audio>
-							<br>
-							<audio controls="">
-								<source src="./audios/our_results/2-alexeiefros.wav" type="audio/wav">
-								Your browser does not support the audio element.
-							</audio>
-							<br>
-					</th>
-					<th>
-						<img class="rounded" src = "./images/celeb/claude.png" height="80px"></img><br>
-						Claude Shannon <br>
-						<audio controls="">
-							<source src="./audios/our_results/1-claudeshannon.wav" type="audio/wav">
-							Your browser does not support the audio element.
-							</audio>
-							<br>
-							<audio controls="">
-								<source src="./audios/our_results/2-claudeshannon.wav" type="audio/wav">
-								Your browser does not support the audio element.
-							</audio>
-							<br>
-					</th>
-				</tr>
-
-				<tr>
-					<th>
-						<br>
-						<img class="rounded" src = "./images/celeb/richard.png" height="80px"></img><br>
-						Richard Hamming <br>
-						<audio controls="">
-							<source src="./audios/our_results/1-richardhamming.wav" type="audio/wav">
-							Your browser does not support the audio element.
-							</audio>
-							<br>
-							<audio controls="">
-								<source src="./audios/our_results/2-richardhamming.wav" type="audio/wav">
-								Your browser does not support the audio element.
-							</audio>
-							<br>
-					</th>
-
-					<th>
-						<img class="rounded" src = "./images/celeb/robert.png" height="80px"></img><br>
-						Robert Iger <br>
-						<audio controls="">
-							<source src="./audios/our_results/1-robertiger.wav" type="audio/wav">
-							Your browser does not support the audio element.
-							</audio>
-							<br>
-							<audio controls="">
-								<source src="./audios/our_results/2-robertiger.wav" type="audio/wav">
-								Your browser does not support the audio element.
-							</audio>
-							<br>
-					</th>
-					<th>
-						<img class="rounded" src = "./images/celeb/stephen.png" height="80px"></img><br>
-						Stephen Hawking <br>
-						<audio controls="">
-							<source src="./audios/our_results/1-stephenhawking.wav" type="audio/wav">
-							Your browser does not support the audio element.
-							</audio>
-							<br>
-							<audio controls="">
-								<source src="./audios/our_results/2-stephenhawking.wav" type="audio/wav">
-								Your browser does not support the audio element.
-							</audio>
-							<br>
-					</th>
-				</tr> -->
 				</tbody>
 			</table>
 				
@@ -732,189 +509,8 @@
 
 		<center><h1>Audiovisual Synthesis</h1></center>
 		We can convert the input speech of any individual into an audiovisual stream of any learned speaker, e.g. John Oliver.
-		  <!-- We show audiovisual results based on audio input of random speakers. We use the publicly available videos of various public figures for the experiement, especially the <a href="http://www.robots.ox.ac.uk/~vgg/data/voxceleb/vox2.html">VoxCeleb2 dataset</a>. <br><br><br> -->
 
-			<!-- <table align=center>
-				<thead>
-					<tr>
-						<th>Input</th>
-						<th colspan="3">Output</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th>
-						<audio controls="">
-							<source src="./audios/trump01/input_trump.wav" type="audio/wav">
-							Your browser does not support the audio element.
-								</audio>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/01_obama.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/01_churchill.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/01_vox1106.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-					</tr>
-					<tr>
-						<th>
-						<audio controls="">
-							<source src="videos/input/input_4_MartinLutherKing.wav" type="audio/wav">
-							Your browser does not support the audio element.
-								</audio>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/02_obama.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/02_churchill.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/02_vox1106.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-					</tr>
-					<tr>
-						<th>
-						<audio controls="">
-							<source src="videos/input/p364_001.wav" type="audio/wav">
-							Your browser does not support the audio element.
-								</audio>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/03_obama.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/03_churchill.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/03_vox1106.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-					</tr>
-				</tbody>
-			</table> -->
-
-			<!-- <table align=center>
-				<thead>
-					<tr>
-						<th></th>
-						<th colspan="3">Input</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th></th>
-						<th>
-						<audio controls="">
-								<source src="./audios/trump01/input_trump.wav" type="audio/wav">
-								Your browser does not support the audio element.
-						</audio>
-						</th>
-						<th>
-						<audio controls="">
-							<source src="videos/input/input_4_MartinLutherKing.wav" type="audio/wav">
-							Your browser does not support the audio element.
-						</audio>
-						</th>
-						<th>
-						<audio controls="">
-							<source src="videos/input/p364_001.wav" type="audio/wav">
-							Your browser does not support the audio element.
-								</audio>
-						</th>
-					</tr>
-					<tr>
-						<th rowspan="3">Output</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/01_obama.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/02_obama.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/03_obama.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-					</tr>
-					<tr>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/01_churchill.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/02_churchill.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/03_churchill.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-					</tr>
-					<tr>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/01_vox1106.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/02_vox1106.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-						<th>
-						<video width="240" height="240" controls>
-							<source src="videos/samples/03_vox1106.mp4" type="video/mp4">
-								Your browser does not support the video element.
-						</video>
-						</th>
-					</tr>
-				</tbody>
-			</table> -->
+			
 
 			<table align=center>
 				<tbody>
@@ -956,20 +552,6 @@
 		  </span></center>
 
 		  <hr>	
-<!-- 
-		  <center><h1>Audio-Video Retargeting</h1></center>
-
-		  We can also combine our voice-conversion network with video retargeting technology, such as Recycle-GAN. Different from our Audiovisual Synthesis, this time we take the source speaker’s video as input too. In this way, we drive both the speech and the expressions of the target speaker according to the source input.
-		  <br><br>
-		  <center>
-		  <p><iframe width="560" height="315" src="https://www.youtube.com/embed/fhiVXWNYlGE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen=""></iframe></p>
-		  </center>
-
-		  <center><br><span style="font-size:14px"><i>Given an audiovisual speech from Obama, we use Recycle-GAN to generate Trump's video and use our voice-conversion network to generate Trump's audio.</i><br><br><br>
-		  </span></center>
-
-		  <hr>
--->
 
 		<center><h1>Broader Impact</h1></center>
 
@@ -981,11 +563,21 @@
 		  	
         <center><h1>Acknowledgements</h1></center>
 
-        We thank Maneesh Agrawala and Fred Baik for the motivation to use Electrolarynx for assistive applications. We also thank Alan Black and David Forsyth for various discussion. We thank the authors of  <a href="https://github.com/auspicious3000/autovc">AutoVC</a> for their related work. We also thank members of Deva's Lab for helpful discussions. Finally, we thank the authors of <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a> for this webpage design.
+        We thank Maneesh Agrawala and Fred Baik for the motivation to use samples of Electrolarynx for assistive applications. We thank Alan Black and David Forsyth for various discussion. We thank the authors of  <a href="https://github.com/auspicious3000/autovc">AutoVC</a> for their related work. We also thank members of Deva's Lab for helpful discussions. Finally, we thank the authors of <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a> for this webpage design.
 
 
 		<br><br>
-              
+        
+		<script>
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+					document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+					</script><script src="./aayushb_wfiles/ga.js" type="text/javascript"></script> <script type="text/javascript">
+			try {
+					var pageTracker = _gat._getTracker("UA-39749944-1");
+					pageTracker._trackPageview();
+					} catch(err) {}
+		</script>
+
 </body>
 </html>
  
