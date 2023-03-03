@@ -56,9 +56,27 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
+
+          
+          <tr onmouseout="pix2pix3D_stop()" onmouseover="pix2pix3D_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src='images/pix2pix3d/teaser_jpg.jpg' width="300">
+              <div class="one">
+                <div class="two" id='pix2pix3D_image'><video  width="310" muted autoplay loop>
+                <source src="images/pix2pix3d/demo_2.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/pix2pix3d/teaser_jpg.jpg' width="300">
+              </div>
+              <script type="text/javascript">
+                function pix2pix3D_start() {
+                  document.getElementById('pix2pix3D_image').style.opacity = "1";
+                }
+          
+                function pix2pix3D_stop() {
+                  document.getElementById('pix2pix3D_image').style.opacity = "0";
+                }
+                pix2pix3D_stop()
+              </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <!-- <a href="https://www.ijcai.org/proceedings/2019/0307.pdf">
@@ -70,7 +88,7 @@
               <br> <br>
               <em>CVPR</em>, 2023
               <br>
-              <a href="http://www.cs.cmu.edu/~pix2pix3D/">project page</a> | <a href="https://github.com/dunbar12138/pix2pix3D">github</a>
+              <a href="http://www.cs.cmu.edu/~pix2pix3D/">project page</a> / <a href="https://github.com/dunbar12138/pix2pix3D">github</a>
               <p></p>
               <p>We propose <em>pix2pix3D</em>, a 3D-aware conditional generative model for controllable photorealistic image synthesis. Given a 2D label map, such as a segmentation or edge map, our model learns to synthesize a corresponding image from different viewpoints.</p>
             </td>
@@ -91,7 +109,7 @@
               <em>CVPR</em>, 2022
               <!-- <em>ArXiv</em> -->
               <br>
-              <a href="https://www.cs.cmu.edu/~dsnerf/">project page</a> | <a href="https://github.com/dunbar12138/DSNeRF">github</a>
+              <a href="https://www.cs.cmu.edu/~dsnerf/">project page</a> / <a href="https://github.com/dunbar12138/DSNeRF">github</a>
               <p></p>
               <p>Proposed DS-NeRF (Depth-supervised Neural Radiance Fields), a model for learning neural radiance fields that takes advantage of depth supervised by 3D point clouds.</p>
             </td>
@@ -199,6 +217,9 @@
             <p>
               Teaching Assistant:
             </p>
+            <ul>
+              <li>Spring 2023, 16-720A: Computer Vision, Carnegie Mellon University</li>
+            </ul>
             <ul>
               <li>Fall 2022, 16-822: Geometry-based Methods in Vision, Carnegie Mellon University</li>
             </ul>
