@@ -84,8 +84,8 @@
 
               <tr bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <video width="310" muted autoplay loop>
-                    <source src="images/CubePart/CubePart-SIGGRAPH.mp4" type="video/mp4">
+                  <video width="310" muted loop playsinline webkit-playsinline preload="none">
+                    <source src="images/CubePart/CubePart-SIGGRAPH-480p.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
                 </td>
@@ -116,7 +116,7 @@
 
               <tr bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <video width="310" muted autoplay loop>
+                  <video width="310" muted loop playsinline webkit-playsinline preload="none">
                     <source src="images/legogpt/stitched_output.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -176,7 +176,7 @@
 
               <tr bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <video width="310" muted autoplay loop>
+                  <video width="310" muted loop playsinline webkit-playsinline preload="none">
                     <source src="images/Cube/greyscale.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -201,7 +201,7 @@
 
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <video width="310" muted autoplay loop>
+                  <video width="310" muted loop playsinline webkit-playsinline preload="none">
                     <source src="images/MaterialFusion/materialfusion.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -233,7 +233,7 @@
 
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <video width="310" muted autoplay loop>
+                  <video width="310" muted loop playsinline webkit-playsinline preload="none">
                     <source src="images/TactileDreamFusion/avocado_hstack.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -263,7 +263,7 @@
 
               <tr bgcolor="#ffffd0">
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <video width="310" muted autoplay loop>
+                  <video width="310" muted loop playsinline webkit-playsinline preload="none">
                     <source src="images/flashtex/studio_bay_fireplace_stacked.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -316,7 +316,7 @@
 
               <tr>
                 <td style="padding:20px;width:25%;vertical-align:middle">
-                  <video width="310" muted autoplay loop>
+                  <video width="310" muted loop playsinline webkit-playsinline preload="none">
                     <source src="images/total_recon/cover_figure.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
@@ -349,7 +349,7 @@
               <tr onmouseout="pix2pix3D_stop()" onmouseover="pix2pix3D_start()">
                 <td style="padding:20px;width:25%;vertical-align:middle">
                   <div class="one">
-                    <div class="two" id='pix2pix3D_image'><video width="310" muted autoplay loop>
+                    <div class="two" id='pix2pix3D_image'><video width="310" muted loop playsinline webkit-playsinline preload="none">
                         <source src="images/pix2pix3d/demo_2.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video></div>
@@ -537,6 +537,29 @@
         </td>
       </tr>
   </table>
+
+  <script type="text/javascript">
+    // Lazy-load thumbnail videos: only fetch/play when scrolled into view,
+    // and pause when off-screen. Keeps initial page load light, especially on mobile.
+    (function () {
+      var videos = document.querySelectorAll('video');
+      if (!('IntersectionObserver' in window)) {
+        videos.forEach(function (v) { v.play().catch(function () {}); });
+        return;
+      }
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          var v = entry.target;
+          if (entry.isIntersecting) {
+            v.play().catch(function () {});
+          } else {
+            v.pause();
+          }
+        });
+      }, { threshold: 0.25 });
+      videos.forEach(function (v) { io.observe(v); });
+    })();
+  </script>
 </body>
 
 </html>
